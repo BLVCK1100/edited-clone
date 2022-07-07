@@ -17,14 +17,11 @@ logger = logging.getLogger(__name__)
 @Client.on_message(filters.command("start"))
 async def start(client, message):
     if message.chat.type in ['group', 'supergroup']:
-        buttons = [
-            [
-                InlineKeyboardButton('ᴜᴘᴅᴀᴛᴇs', url='https://t.me/mh_world')
-            ],
-            [
-                InlineKeyboardButton('ᴍ ᴏ ʀ ᴇ', url=f"https://t.me/{temp.U_NAME}?start=more"),
-            ]
-            ]
+        buttons = [[    
+        InlineKeyboardButton('ᴜᴘᴅᴀᴛᴇs', url='https://t.me/mh_world')
+        InlineKeyboardButton('ᴍ ᴏ ʀ ᴇ', url=f"https://t.me/{temp.U_NAME}?start=more"),
+     ]]
+              
         reply_markup = InlineKeyboardMarkup(buttons)
 
         if not await db.get_chat(message.chat.id):
