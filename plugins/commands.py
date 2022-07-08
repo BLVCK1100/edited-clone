@@ -42,7 +42,7 @@ async def start(client, message):
           [
             InlineKeyboardButton('ᴀʙᴏᴜᴛ', callback_data='about'),
             InlineKeyboardButton('sᴛᴀᴛᴜs', callback_data='stats'),
-            InlineKeyboardButton('ᴄʟᴏsᴇ', callback_data='close')
+            InlineKeyboardButton('ᴄʟᴏsᴇ', callback_data='close_data')
         ]]
               
         reply_markup = InlineKeyboardMarkup(buttons)
