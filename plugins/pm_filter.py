@@ -701,8 +701,8 @@ async def cb_handler(client: Client, query: CallbackQuery):
     elif query.data == "rfrsh":
         await query.answer("Refreshing DB")
         buttons = [[
-            InlineKeyboardButton('𝖡𝖺𝖼𝗄', callback_data='help'),
-            InlineKeyboardButton('𝖱𝖾𝖿𝗋𝖾𝗌𝗁', callback_data='rfrsh')
+            InlineKeyboardButton('ʙᴀᴄᴋ', callback_data='start'),
+            InlineKeyboardButton('ʀᴇғʀᴇsʜ', callback_data='rfrsh')
         ]]
         reply_markup = InlineKeyboardMarkup(buttons)
         total = await Media.count_documents()
