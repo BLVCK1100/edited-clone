@@ -423,7 +423,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
         buttons = [[
             InlineKeyboardButton('ᴜᴘᴅᴀᴛᴇ', url='https://t.me/mh_world'),
             InlineKeyboardButton('ᴍᴏᴠɪᴇs', url='https://t.me/+UjUbA23ZTM9iNzA1'),
-            InlineKeyboardButton('ᴄʟᴏsᴇ', callback_data='back')
+            InlineKeyboardButton('ᴄʟᴏsᴇ', callback_data='start')
         ]]
         
 
@@ -435,7 +435,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
         )
     elif query.data == "gtrans":
         buttons = [[
-            InlineKeyboardButton('𝖡𝖺𝖼𝗄', callback_data='back')
+            InlineKeyboardButton('𝖡𝖺𝖼𝗄', callback_data='help')
         ]]
         reply_markup = InlineKeyboardMarkup(buttons)
         await query.message.edit_text(
