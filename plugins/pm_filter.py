@@ -387,7 +387,8 @@ async def cb_handler(client: Client, query: CallbackQuery):
             InlineKeyboardButton('➕ ᴀᴅᴅ ᴍᴇ ᴛᴏ ʏᴏᴜʀ ɢʀᴏᴜᴘ ➕', url=f'http://t.me/{temp.U_NAME}?startgroup=true') ] ,
          [
             InlineKeyboardButton('ᴀʙᴏᴜᴛ', callback_data='about'),
-            InlineKeyboardButton('ᴄʟᴏsᴇ', callback_data='close')
+            InlineKeyboardButton('sᴛᴀᴛᴜs', callback_data='stats'),
+            InlineKeyboardButton('ᴄʟᴏsᴇ', callback_data='close_data')
       ]]
         reply_markup = InlineKeyboardMarkup(buttons)
         await query.message.edit_text(
@@ -423,7 +424,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
         buttons = [[
             InlineKeyboardButton('ᴜᴘᴅᴀᴛᴇ', url='https://t.me/mh_world'),
             InlineKeyboardButton('ᴍᴏᴠɪᴇs', url='https://t.me/+UjUbA23ZTM9iNzA1'),
-            InlineKeyboardButton('ᴄʟᴏsᴇ', callback_data='start')
+            InlineKeyboardButton('ʙᴀᴄᴋ', callback_data='start')
         ]]
         
 
